@@ -14,7 +14,7 @@ module TransfersHelper
   end
   
   def transfer_state(state, options = {})   
-    content_tag :span,
+    content_tag :span, 
       :class => ["transfer-state", color_for_transfer_state(state)] do
       "#{options[:icon] ? image_tag("#{state}.png", :class => "state-icon") : ""} #{options[:message]}".strip.html_safe
     end
@@ -22,8 +22,8 @@ module TransfersHelper
   
   def color_for_transfer_state(state)
     case state 
-    when "pending"    : "orange"
-    when "processed"  : "green"
+    when "pending"   then "orange"
+    when "processed" then "green"
     end
   end
 end
