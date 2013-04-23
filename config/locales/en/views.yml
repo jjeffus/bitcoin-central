@@ -1,7 +1,7 @@
 en:
   layouts:
     application:
-      title: "Bitcoin-Central : Trade Bitcoins easily and safely"
+      title: "Trade Bitcoins easily and safely"
       description: Buy, sell and store Bitcoins easily and safely on the best open-source platform
     user_informations:
       signed_in_as: Signed-in as
