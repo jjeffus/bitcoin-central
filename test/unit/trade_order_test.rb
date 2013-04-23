@@ -239,7 +239,7 @@ class TradeOrderTest < ActiveSupport::TestCase
       buy_order.execute!
     end
 
-    assert_equal trader1.balance(:btc), 99.24573
+    assert_equal trader1.balance(:btc).to_f, 99.24573
     assert_equal trader1.balance(:lrusd), 0.0
     assert_equal trader2.balance(:btc), 0.75427
     assert_equal trader2.balance(:lrusd), 25.0
